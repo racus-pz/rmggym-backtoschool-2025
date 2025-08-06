@@ -25,7 +25,7 @@ const Index = () => {
     };
   }, []);
 
-  const registrationUrl = "https://rmggym.pl/wakajki-promo";
+  const registrationUrl = "https://rmggym.pl/back-to-school-promo";
 
   return (
     <div className="min-h-screen bg-background dark:bg-background font-inter">
@@ -116,7 +116,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <div className="text-center">
               <div className="flex justify-center mb-4">
-                <i className="fa-solid fa-ticket-perforated text-white text-2xl"></i>
+                <i className="fa-solid fa-ticket-perforated text-white text-3xl"></i>
               </div>
               <h5 className="text-lg font-poppins font-bold text-white mb-3">Karnety już za 39 zł</h5>
               <p className="text-white">za pierwszą płatność</p>
@@ -124,7 +124,7 @@ const Index = () => {
             
             <div className="text-center">
               <div className="flex justify-center mb-4">
-                <i className="fa-solid fa-shield-check text-white text-2xl"></i>
+                <i className="fa-solid fa-shield-check text-white text-3xl"></i>
               </div>
               <h5 className="text-lg font-poppins font-bold text-white mb-3">cena regularna od 99 zł</h5>
               <p className="text-white">zachowujesz cenę sprzed podwyżki</p>
@@ -132,34 +132,34 @@ const Index = () => {
             
             <div className="text-center">
               <div className="flex justify-center mb-4">
-                <i className="fa-solid fa-wallet text-white text-2xl"></i>
+                <i className="fa-solid fa-wallet text-white text-3xl"></i>
               </div>
               <h5 className="text-lg font-poppins font-bold text-white mb-3">z góry wiesz ile zapłacisz</h5>
-              <p className="text-white">bez niespodzianek i bez podwyżek <span className="text-green-500 font-bold">GRATIS</span></p>
+              <p className="text-white">bez niespodzianek i bez podwyżek </p>
             </div>
             
             <div className="text-center">
               <div className="flex justify-center mb-4">
-                <i className="fa-solid fa-infinity text-white text-2xl"></i>
+                <i className="fa-solid fa-infinity text-white text-3xl"></i>
               </div>
               <h5 className="text-lg font-poppins font-bold text-white mb-3">dostęp 24/7</h5>
-              <p className="text-white">ćwiczysz kiedy chcesz i ile chcesz <span className="text-green-500 font-bold">GRATIS</span></p>
+              <p className="text-white">ćwiczysz kiedy chcesz i ile chcesz </p>
             </div>
             
             <div className="text-center">
               <div className="flex justify-center mb-4">
-                <i className="fa-solid fa-user-ninja text-2xl text-green-500"></i>
+                <i className="fa-solid fa-user-ninja text-3xl text-lime-500"></i>
               </div>
-              <h5 className="text-lg font-poppins font-bold text-green-500 mb-3">Trening wprowadzający<span className="bg-green-500 text-black px-2 py-1 rounded-md font-bold text-xs">GRATIS</span></h5>
-              <p className="text-green-500">odkryj swoje możliwości dzięki pomocy trenera personalnego </p>
+              <h5 className="text-lg font-poppins font-bold text-lime-500 mb-3">Trening wprowadzający<span className="bg-lime-500 text-black px-2 py-1 rounded-md font-bold text-xs">GRATIS</span></h5>
+              <p className="text-lime-500">odkryj swoje możliwości dzięki pomocy trenera personalnego </p>
             </div>
             
             <div className="text-center">
               <div className="flex justify-center mb-4">
-              <i class="fa-solid fa-pot-food text-2xl text-green-500"></i>
+              <i class="fa-solid fa-pot-food text-3xl text-lime-500"></i>
               </div>
-              <h5 className="text-lg font-poppins font-bold text-green-500 mb-3">Program dietetyczny<span className="bg-green-500 text-black px-2 py-1 rounded-md font-bold text-xs">GRATIS</span></h5>
-              <p className="text-green-500">zadbaj o swoje zdrowie stosując dietę dopasowaną do Twoich potrzeb <span className="bg-green-500 text-black px-2 py-1 rounded-md font-bold text-xs">GRATIS</span></p>
+              <h5 className="text-lg font-poppins font-bold text-lime-500 mb-3">Program dietetyczny<span className="bg-lime-500 text-black px-2 py-1 rounded-md font-bold text-xs">GRATIS</span></h5>
+              <p className="text-lime-500">zadbaj o swoje zdrowie stosując dietę dopasowaną do Twoich potrzeb </p>
             </div>
           </div>
           
