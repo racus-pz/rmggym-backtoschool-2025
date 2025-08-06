@@ -59,7 +59,7 @@ const Index = () => {
             </h1>
             
             <p className="text-xl md:text-3xl font-poppins font-extrabold text-accent mb-8">Trenuj do końca września za 39 zł i zatrzymaj starą cenę zanim wzrośnie</p>
-            <p className="font-poppins font-medium text-accent mb-8">Od 1.09 ceny karnetów rosną – ale nie dla Ciebie! Ty trenujesz taniej i zachowujesz starą cenę karnetu – bez względu na wrześniową podwyżkę!</p>
+            <p className="font-poppins font-normal text-white mb-8"></p>
             <motion.a
               href={registrationUrl}
               target="_self"
@@ -109,57 +109,57 @@ const Index = () => {
       {/* Features Section */}
       <section className="bg-black py-20 md:py-32 px-4">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-5xl font-poppins font-bold text-center mb-16 text-white">
-            Trenuj za 69 zł do końca wakacji!
+          <h2 className="text-xl md:text-2xl font-poppins font-bold text-center mb-16 text-white">
+            Od 1.09 ceny karnetów rosną – ale nie dla Ciebie! Ty trenujesz taniej i zachowujesz starą cenę karnetu – bez względu na wrześniową podwyżkę!
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <div className="text-center">
               <div className="flex justify-center mb-4">
-                <i className="fas fa-ticket-alt text-accent text-5xl"></i>
+                <i className="fa-solid fa-ticket-perforated text-white text-2xl"></i>
               </div>
-              <h5 className="text-xl font-poppins font-bold text-white mb-3">Promocyjna cena</h5>
-              <p className="text-white">Karnety już za 69 zł na cały okres wakacji</p>
+              <h5 className="text-lg font-poppins font-bold text-white mb-3">Karnety już za 39 zł</h5>
+              <p className="text-white">za pierwszą płatność</p>
             </div>
             
             <div className="text-center">
               <div className="flex justify-center mb-4">
-                <i className="fas fa-clock text-accent text-5xl"></i>
+                <i className="fa-solid fa-shield-check text-white text-2xl"></i>
               </div>
-              <h5 className="text-xl font-poppins font-bold text-white mb-3">Dostęp 24/7</h5>
-              <p className="text-white">Trenuj kiedy chcesz, przez całą dobę, każdego dnia</p>
+              <h5 className="text-lg font-poppins font-bold text-white mb-3">cena regularna od 99 zł</h5>
+              <p className="text-white">zachowujesz cenę sprzed podwyżki</p>
             </div>
             
             <div className="text-center">
               <div className="flex justify-center mb-4">
-                <i className="fas fa-user-friends text-accent text-5xl"></i>
+                <i className="fa-solid fa-wallet text-white text-2xl"></i>
               </div>
-              <h5 className="text-xl font-poppins font-bold text-white mb-3">Trening wprowadzający</h5>
-              <p className="text-white">Bezpłatny trening wprowadzający z instruktorem <span className="text-green-500 font-bold">GRATIS</span></p>
+              <h5 className="text-lg font-poppins font-bold text-white mb-3">z góry wiesz ile zapłacisz</h5>
+              <p className="text-white">bez niespodzianek i bez podwyżek <span className="text-green-500 font-bold">GRATIS</span></p>
             </div>
             
             <div className="text-center">
               <div className="flex justify-center mb-4">
-                <i className="fas fa-apple-alt text-accent text-5xl"></i>
+                <i className="fa-solid fa-infinity text-white text-2xl"></i>
               </div>
-              <h5 className="text-xl font-poppins font-bold text-white mb-3">Program dietetyczny</h5>
-              <p className="text-white">Indywidualny plan żywienia dopasowany do Twoich celów <span className="text-green-500 font-bold">GRATIS</span></p>
+              <h5 className="text-lg font-poppins font-bold text-white mb-3">dostęp 24/7</h5>
+              <p className="text-white">ćwiczysz kiedy chcesz i ile chcesz <span className="text-green-500 font-bold">GRATIS</span></p>
             </div>
             
             <div className="text-center">
               <div className="flex justify-center mb-4">
-                <i className="fas fa-tint text-accent text-5xl"></i>
+                <i className="fa-solid fa-user-ninja text-2xl text-green-500"></i>
               </div>
-              <h5 className="text-xl font-poppins font-bold text-white mb-3">Woda na trening</h5>
-              <p className="text-white">Bezpłatna woda podczas każdego treningu <span className="text-green-500 font-bold">GRATIS</span></p>
+              <h5 className="text-lg font-poppins font-bold text-green-500 mb-3">Trening wprowadzający<span className="bg-green-500 text-black px-2 py-1 rounded-md font-bold text-xs">GRATIS</span></h5>
+              <p className="text-green-500">odkryj swoje możliwości dzięki pomocy trenera personalnego </p>
             </div>
             
             <div className="text-center">
               <div className="flex justify-center mb-4">
-                <i className="fas fa-calendar-alt text-accent text-5xl"></i>
+              <i class="fa-solid fa-pot-food text-2xl text-green-500"></i>
               </div>
-              <h5 className="text-xl font-poppins font-bold text-white mb-3">Cena po wakacjach</h5>
-              <p className="text-white">Cena regularna 109 zł obowiązuje od 31.08</p>
+              <h5 className="text-lg font-poppins font-bold text-green-500 mb-3">Program dietetyczny<span className="bg-green-500 text-black px-2 py-1 rounded-md font-bold text-xs">GRATIS</span></h5>
+              <p className="text-green-500">zadbaj o swoje zdrowie stosując dietę dopasowaną do Twoich potrzeb <span className="bg-green-500 text-black px-2 py-1 rounded-md font-bold text-xs">GRATIS</span></p>
             </div>
           </div>
           
