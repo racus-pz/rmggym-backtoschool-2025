@@ -142,7 +142,7 @@ const Index = () => {
               <div className="flex justify-center mb-4">
                 <i className="fa-solid fa-infinity text-white text-3xl"></i>
               </div>
-              <h5 className="text-lg font-poppins font-bold text-white mb-3">dostęp 24/7</h5>
+              <h5 className="text-lg font-poppins font-bold text-white mb-3">dostęp<br />24/7</h5>
               <p className="text-white">ćwiczysz kiedy chcesz i ile chcesz </p>
             </div>
             
@@ -150,16 +150,16 @@ const Index = () => {
               <div className="flex justify-center mb-4">
                 <i className="fa-solid fa-user-ninja text-3xl text-lime-500"></i>
               </div>
-              <h5 className="text-lg font-poppins font-bold text-lime-500 mb-3">Trening wprowadzający<span className="bg-lime-500 text-black px-2 py-1 rounded-md font-bold text-xs">GRATIS</span></h5>
+              <h5 className="text-lg font-poppins font-bold text-lime-500 mb-3">Trening wprowadzający<span className="bg-lime-500 ms-2 text-black px-1 py-1 rounded-md font-bold text-2xs">GRATIS</span></h5>
               <p className="text-lime-500">odkryj swoje możliwości dzięki pomocy trenera personalnego </p>
             </div>
             
             <div className="text-center">
               <div className="flex justify-center mb-4">
-              <i class="fa-solid fa-pot-food text-3xl text-lime-500"></i>
+                <i class="fa-solid fa-pot-food text-3xl text-lime-500"></i>
               </div>
-              <h5 className="text-lg font-poppins font-bold text-lime-500 mb-3">Program dietetyczny<span className="bg-lime-500 text-black px-2 py-1 rounded-md font-bold text-xs">GRATIS</span></h5>
-              <p className="text-lime-500">zadbaj o swoje zdrowie stosując dietę dopasowaną do Twoich potrzeb </p>
+              <h5 className="text-lg font-poppins font-bold text-lime-500 mb-3">Program dietetyczny<span className="bg-lime-500 ms-2 text-black px-1 py-1 rounded-md font-bold text-xs">GRATIS</span></h5>
+              <p className="text-lime-500">zadbaj o swoje zdrowie korzystając z dopasowanej diety </p>
             </div>
           </div>
           
