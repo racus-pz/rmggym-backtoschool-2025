@@ -3,86 +3,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 import Navbar from "../components/Navbar";
 
-// Funkcja pomocnicza do pobierania wersji na podstawie daty
-function getPromoContent(date: Date) {
-  const y = date.getFullYear();
-  const m = date.getMonth() + 1; // miesiące 0-11
-  const d = date.getDate();
-  // Okresy: 1 - 26.05-30.06, 2 - 01.07-31.07, 3 - 01.08-22.08
-  if (
-    (y === 2025 && ((m === 5 && d >= 26) || (m === 6 && d <= 30)))
-  ) {
-    return {
-      version: 1,
-      mainHeader: "Startuj z formą na lato!",
-      price: "69 zł",
-      priceDesc: "za cały okres wakacji",
-      iconPrice: "69 zł",
-      infoPrice: "Trenuj za 69 zł do końca wakacji!",
-      cta: "Kupuję karnet w cenie promocyjnej",
-      faqStart: "26.05",
-      faqEnd: "31.08",
-      faqPrice: "69 zł",
-      faqStartText: "26.05 - 31.08",
-    };
-  } else if (
-    (y === 2025 && m === 7 && d >= 1 && d <= 31)
-  ) {
-    return {
-      version: 2,
-      mainHeader: "Lato trwa, a cena spada!",
-      price: "49 zł",
-      priceDesc: "za całe 2 miesiące wakacji",
-      iconPrice: "49 zł",
-      infoPrice: "Trenuj za 49 zł do końca sierpnia!",
-      cta: "Kupuję karnet w cenie promocyjnej",
-      faqStart: "01.07",
-      faqEnd: "31.08",
-      faqPrice: "49 zł",
-      faqStartText: "01.07 - 31.08",
-    };
-  } else if (
-    (y === 2025 && m === 8 && d >= 1 && d <= 22)
-  ) {
-    return {
-      version: 3,
-      mainHeader: "Ostatnia szansa! Trenuj za",
-      price: "29 zł",
-      priceDesc: "do końca wakacji",
-      iconPrice: "29 zł",
-      infoPrice: "Trenuj za 29 zł do końca wakacji!",
-      cta: "Kupuję karnet w cenie promocyjnej",
-      faqStart: "01.08",
-      faqEnd: "31.08",
-      faqPrice: "29 zł",
-      faqStartText: "01.08 - 31.08",
-      extraHeader: "Wakacje się kończą, ale Twoja forma może dopiero się zacząć",
-    };
-  } else {
-    // Domyślnie wersja 1 (można zmienić na inną logikę po zakończeniu promocji)
-    return {
-      version: 1,
-      mainHeader: "Startuj z formą na lato!",
-      price: "69 zł",
-      priceDesc: "za cały okres wakacji",
-      iconPrice: "69 zł",
-      infoPrice: "Trenuj za 69 zł do końca wakacji!",
-      cta: "Kupuję karnet w cenie promocyjnej",
-      faqStart: "26.05",
-      faqEnd: "31.08",
-      faqPrice: "69 zł",
-      faqStartText: "26.05 - 31.08",
-    };
-  }
-}
-
 const Index = () => {
   useEffect(() => {
     document.documentElement.classList.add('dark');
   }, []);
 
   const [isButtonFixed, setIsButtonFixed] = useState(false);
-  const [promo, setPromo] = useState(getPromoContent(new Date()));
 
   useEffect(() => {
     const heroSection = document.getElementById('hero-section');
@@ -97,14 +23,6 @@ const Index = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
-
-  // Odśwież promo przy zmianie daty (np. po północy)
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setPromo(getPromoContent(new Date()));
-    }, 60 * 1000); // co minutę
-    return () => clearInterval(interval);
   }, []);
 
   const registrationUrl = "https://rmggym.pl/wakajki-promo";
@@ -137,15 +55,12 @@ const Index = () => {
             className="text-center"
           >
             <h1 className="text-4xl md:text-6xl font-poppins font-extrabold text-white mb-6">
-              {promo.mainHeader}
+              Startuj z formą na lato!
             </h1>
             <p className="text-4xl md:text-7xl font-poppins font-extrabold text-accent mb-8">
-              <span className="text-6xl md:text-9xl">{promo.price}</span>
+              <span className="text-6xl md:text-9xl">69 zł</span>
             </p>
-            <p className="text-4xl md:text-7xl font-poppins font-extrabold text-accent mb-8"> {promo.priceDesc}</p>
-            {promo.extraHeader && (
-              <p className="text-xl md:text-2xl font-poppins font-bold text-white mb-4">{promo.extraHeader}</p>
-            )}
+            <p className="text-4xl md:text-7xl font-poppins font-extrabold text-accent mb-8">za cały okres wakacji</p>
             <motion.a
               href={registrationUrl}
               target="_self"
@@ -192,42 +107,118 @@ const Index = () => {
         )}
       </AnimatePresence>
 
-      {/* Information Section */}
+      {/* Features Section */}
       <section className="bg-black py-20 md:py-32 px-4">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-5xl font-poppins font-bold text-center mb-12">
-            {promo.infoPrice}
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl md:text-5xl font-poppins font-bold text-center mb-16 text-white">
+            Trenuj za 69 zł do końca wakacji!
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 mb-12">
-            <div className="flex items-center gap-4">
-              <i className="fas fa-ticket-alt text-accent text-3xl mt-1"></i>
-              <p className="text-xl font-semibold">Karnety już za {promo.iconPrice}</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div className="text-center">
+              <div className="flex justify-center mb-4">
+                <i className="fas fa-ticket-alt text-accent text-5xl"></i>
+              </div>
+              <h5 className="text-xl font-poppins font-bold text-white mb-3">Promocyjna cena</h5>
+              <p className="text-white">Karnety już za 69 zł na cały okres wakacji</p>
             </div>
-            <div className="flex items-center gap-4">
-              <i className="fas fa-calendar-alt text-accent text-3xl mt-1"></i>
-              <p className="text-xl font-semibold">Cena regularna 109 zł od 31.08</p>
+            
+            <div className="text-center">
+              <div className="flex justify-center mb-4">
+                <i className="fas fa-clock text-accent text-5xl"></i>
+              </div>
+              <h5 className="text-xl font-poppins font-bold text-white mb-3">Dostęp 24/7</h5>
+              <p className="text-white">Trenuj kiedy chcesz, przez całą dobę, każdego dnia</p>
             </div>
-            <div className="flex items-center gap-4">
-              <i className="fas fa-clock text-accent text-3xl mt-1"></i>
-              <p className="text-xl font-semibold">Dostęp 24h/7</p>
+            
+            <div className="text-center">
+              <div className="flex justify-center mb-4">
+                <i className="fas fa-user-friends text-accent text-5xl"></i>
+              </div>
+              <h5 className="text-xl font-poppins font-bold text-white mb-3">Trening wprowadzający</h5>
+              <p className="text-white">Bezpłatny trening wprowadzający z instruktorem <span className="text-green-500 font-bold">GRATIS</span></p>
             </div>
-            <div className="flex items-center gap-4">
-              <i className="fas fa-user-friends text-accent text-3xl mt-1"></i>
-              <p className="text-xl font-semibold">Trening wprowadzający <sup className="text-green-500">GRATIS</sup></p>
+            
+            <div className="text-center">
+              <div className="flex justify-center mb-4">
+                <i className="fas fa-apple-alt text-accent text-5xl"></i>
+              </div>
+              <h5 className="text-xl font-poppins font-bold text-white mb-3">Program dietetyczny</h5>
+              <p className="text-white">Indywidualny plan żywienia dopasowany do Twoich celów <span className="text-green-500 font-bold">GRATIS</span></p>
             </div>
-            <div className="flex items-center gap-4">
-              <i className="fas fa-apple-alt text-accent text-3xl mt-1"></i>
-              <p className="text-xl font-semibold">Program dietetyczny <sup className="text-green-500">GRATIS</sup></p>
+            
+            <div className="text-center">
+              <div className="flex justify-center mb-4">
+                <i className="fas fa-tint text-accent text-5xl"></i>
+              </div>
+              <h5 className="text-xl font-poppins font-bold text-white mb-3">Woda na trening</h5>
+              <p className="text-white">Bezpłatna woda podczas każdego treningu <span className="text-green-500 font-bold">GRATIS</span></p>
             </div>
-            <div className="flex items-center gap-4">
-              <i className="fas fa-tint text-accent text-3xl mt-1"></i>
-              <p className="text-xl font-semibold">Woda na trening <sup className="text-green-500">GRATIS</sup></p>
+            
+            <div className="text-center">
+              <div className="flex justify-center mb-4">
+                <i className="fas fa-calendar-alt text-accent text-5xl"></i>
+              </div>
+              <h5 className="text-xl font-poppins font-bold text-white mb-3">Cena po wakacjach</h5>
+              <p className="text-white">Cena regularna 109 zł obowiązuje od 31.08</p>
             </div>
           </div>
+          
           <p className="text-center text-lg md:text-xl text-white font-semibold">
             Nie przegap lata i tej oferty! To mogą być Twoje najlepsze wakacje z RMG GYM.
           </p>
+        </div>
+      </section>
+
+      {/* Why Worth It Section */}
+      <section className="bg-gradient-to-br from-pine to-pine-dark py-20 md:py-32 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <h2 className="text-3xl md:text-5xl font-poppins font-bold text-white mb-8">
+                Dlaczego warto?
+              </h2>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <span className="text-4xl">📆</span>
+                  <p className="text-xl text-white leading-relaxed">
+                    Od września ceny wszystkich naszych karnetów drożeją
+                  </p>
+                </div>
+                <div className="flex items-start gap-4">
+                  <span className="text-4xl">💥</span>
+                  <p className="text-xl text-white leading-relaxed">
+                    Ale Ty możesz zatrzymać cenę sprzed podwyżki i do końca września trenować za mniej
+                  </p>
+                </div>
+                <div className="flex items-start gap-4">
+                  <span className="text-4xl">⏳</span>
+                  <p className="text-xl text-white leading-relaxed">
+                    Nie czekaj! Takie ceny już nie wrócą.
+                  </p>
+                </div>
+              </div>
+              <motion.a
+                href={registrationUrl}
+                target="_self"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-block px-8 py-4 bg-accent uppercase text-black font-poppins font-extrabold text-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:bg-accent/90 text-center mt-8"
+              >
+                Kupuję karnet teraz
+              </motion.a>
+            </div>
+            <div className="order-1 lg:order-2 flex justify-center">
+              <div className="w-80 h-80 bg-white/10 rounded-full flex items-center justify-center border-2 border-accent/50">
+                <div className="text-center">
+                  <div className="text-6xl mb-4">🏋️‍♂️</div>
+                  <p className="text-accent font-bold text-2xl">69 zł</p>
+                  <p className="text-white text-lg">na wakacje</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -247,7 +238,7 @@ const Index = () => {
                 Na czym polega wakacyjna promocja w RMG GYM?
               </AccordionTrigger>
               <AccordionContent className="text-lg">
-                Oferujemy trzy karnety do wyboru, których ważność rozpoczyna się {promo.faqStart}. Płacisz z góry za cały okres wakacyjny ({promo.faqStartText}) już od {promo.faqPrice}, <strong className="font-bold text-accent">a po jego zakończeniu obowiązuje cena wybranej przez Ciebie subskrypcji.</strong>
+                Oferujemy trzy karnety do wyboru, których ważność rozpoczyna się 26.05. Płacisz z góry za cały okres wakacyjny (26.05 - 31.08) już od 69 zł, <strong className="font-bold text-accent">a po jego zakończeniu obowiązuje cena wybranej przez Ciebie subskrypcji.</strong>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
