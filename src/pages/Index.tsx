@@ -55,12 +55,11 @@ const Index = () => {
             className="text-center"
           >
             <h1 className="text-4xl md:text-6xl font-poppins font-extrabold text-white mb-6">
-              Startuj z formą na lato!
+              Wracasz po wakacjach? My też.
             </h1>
-            <p className="text-4xl md:text-7xl font-poppins font-extrabold text-accent mb-8">
-              <span className="text-6xl md:text-9xl">69 zł</span>
-            </p>
-            <p className="text-4xl md:text-7xl font-poppins font-extrabold text-accent mb-8">za cały okres wakacji</p>
+            
+            <p className="text-xl md:text-3xl font-poppins font-extrabold text-accent mb-8">Trenuj do końca września za 39 zł i zatrzymaj starą cenę zanim wzrośnie</p>
+            <p className="font-poppins font-medium text-accent mb-8">Od 1.09 ceny karnetów rosną – ale nie dla Ciebie! Ty trenujesz taniej i zachowujesz starą cenę karnetu – bez względu na wrześniową podwyżkę!</p>
             <motion.a
               href={registrationUrl}
               target="_self"
@@ -100,7 +99,7 @@ const Index = () => {
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-accent uppercase text-black font-poppins font-extrabold text-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:bg-accent/90 text-center w-full md:w-auto"
               >
-                Kupuję karnet wakacyjny
+                Kupuję karnet - zamrażam cenę
               </motion.a>
             </div>
           </motion.div>
