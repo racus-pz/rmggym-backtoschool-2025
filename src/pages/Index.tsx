@@ -136,7 +136,7 @@ const Index = () => {
                 <i className="fa-solid fa-wallet text-white text-3xl"></i>
               </div>
               <h5 className="text-lg font-poppins font-bold text-white mb-3">z góry wiesz ile zapłacisz</h5>
-              <p className="text-white">bez niespodzianek i bez podwyżek </p>
+              <p className="text-white">bez niespodzianek i&nbsp;bez podwyżek</p>
             </div>
             
             <div className="text-center">
@@ -144,7 +144,7 @@ const Index = () => {
                 <i className="fa-solid fa-infinity text-white text-3xl"></i>
               </div>
               <h5 className="text-lg font-poppins font-bold text-white mb-3">dostęp<br />24/7</h5>
-              <p className="text-white">ćwiczysz kiedy chcesz i ile chcesz </p>
+              <p className="text-white">ćwiczysz kiedy chcesz i&nbsp;ile chcesz</p>
             </div>
             
             <div className="text-center">
@@ -188,7 +188,7 @@ const Index = () => {
                 <div className="flex items-start gap-4">
                   
                   <p className="text-xl text-white leading-relaxed">
-                    Ale Ty możesz zatrzymać cenę sprzed podwyżki i dodatkowo do końca września trenować za mniej!
+                    Ale Ty możesz zatrzymać cenę sprzed podwyżki i&nbsp;dodatkowo do końca września trenować za mniej!
                   </p>
                 </div>
                 <div className="flex items-start gap-4">
