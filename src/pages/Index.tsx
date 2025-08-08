@@ -233,28 +233,52 @@ const Index = () => {
             </AccordionItem>
             <AccordionItem value="item-2">
               <AccordionTrigger className="text-xl font-semibold text-left">
-                Czy kupuję karnet tylko na wakacje?
+                Co znaczy “gwarancja ceny”?
               </AccordionTrigger>
               <AccordionContent className="text-lg">
-                <strong className="font-bold text-accent">Nie, karnet wakacyjny to promocyjny start dłuższej subskrypcji. Wybierając karnet wakacyjny w promocyjnej cenie, automatycznie aktywujesz karnet na kolejne miesiące – zgodnie z warunkami wybranej oferty.</strong>
+                Kupując teraz, zachowujesz starą cenę – na cały czas trwania Twojej subskrypcji, nawet jeśli inni zapłacą więcej.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
               <AccordionTrigger className="text-xl font-semibold text-left">
-                Jakie karnety w ramach wakacyjnej promocji mogę wybrać?
+                Czy to działa we wszystkich klubach?
               </AccordionTrigger>
               <AccordionContent className="text-lg">
-                Do wyboru masz karnet na 12 miesięcy lub na czas nieokreślony z subskrypcją. Szczegóły znajdziesz po kliknięciu "Kupuję wakacyjny karnet".
+                Tak – promocja obowiązuje w całej sieci RMG GYM.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
+              <AccordionTrigger className="text-xl font-semibold text-left">
+                Na czym polega promocja Back to School w RMG GYM?
+              </AccordionTrigger>
+              <AccordionContent className="text-lg">
+                Oferujemy trzy promocyjne karnety, dzięki którym zyskujesz pierwszą płatność w niższej cenie a kolejne w cenach sprzed podwyżki. Dodatkowo zyskujesz gwarancję, że Twoja cena nie wzrośnie podczas subskrypcji.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-5">
+              <AccordionTrigger className="text-xl font-semibold text-left">
+                Czy kupuję karnet tylko na wrzesień?
+              </AccordionTrigger>
+              <AccordionContent className="text-lg">
+                Nie, karnet na wrzesień to promocyjny start dłuższej subskrypcji. Wybierając karnet na wrzesień w promocyjnej cenie, automatycznie aktywujesz karnet na kolejne miesiące – zgodnie z warunkami wybranej oferty.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-6">
               <AccordionTrigger className="text-xl font-semibold text-left">
                 Czy mogę trenować na siłowni RMG GYM jeśli nie jestem pełnoletni?
               </AccordionTrigger>
               <AccordionContent className="text-lg">
                 <p>Jasne! Do RMG GYM mogą uczęszczać osoby, które mają ukończone 13 lat.</p>
-                <p className="mt-2">Pamiętaj, aby dostarczyć pisemną zgodę rodzica/opiekuna prawnego w formie skanu lub zdjęć na adres bok@rmggym.pl. Wzór zgody do druku znajdziesz tutaj: <a href="https://rmggym.pl/Zgoda_pelnoletnosc.pdf" target="_blank" rel="noopener noreferrer" className="font-bold text-accent hover:underline">Zgoda</a></p>
-                <p className="mt-2 font-semibold">Uwaga: W przypadku braku zgody, konto może zostać tymczasowo zablokowane.</p>
+                <p>Pamiętaj, aby dostarczyć pisemną zgodę rodzica/opiekuna prawnego w formie skanu lub zdjęć na adres <a href="mailto:bok@rmggym.pl">bok@rmggym.pl</a>. Wzór zgody do druku znajdziesz tutaj: <a href="https://rmggym.pl/Zgoda_pelnoletnosc.pdf">Zgoda</a></p>
+              <p>Uwaga: W przypadku braku zgody, konto może zostać tymczasowo zablokowane.</p>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-7"></AccordionItem>
+              <AccordionTrigger className="text-xl font-semibold text-left">
+                Jakie karnety w ramach promocji Back to School mogę wybrać?
+              </AccordionTrigger>
+              <AccordionContent className="text-lg">
+              Do wyboru masz trzy rodzaje karnetów: na 12 miesięcy, na czas nieokreślony z subskrypcją i okresem wypowiedzenia oraz na czas nieokreślony z subskrypcją bez wypowiedzenia. Szczegóły znajdziesz po kliknięciu "<a href={registrationUrl} target="_self" rel="noopener noreferrer" className="font-bold text-accent hover:underline">Kupuję karnet w promocyjnej cenie</a>".
               </AccordionContent>
             </AccordionItem>
           </Accordion>
