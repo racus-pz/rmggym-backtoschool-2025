@@ -55,7 +55,7 @@ const Index = () => {
             className="text-center"
           >
             <h1 className="text-4xl md:text-6xl font-poppins leading-8 font-extrabold text-white mb-6">
-              Trenuj cały wrzesień<br /><span className="text-yellow-400 text-7xl">za 39 zł</span> <br />i zachowaj dobrą cenę na kolejne miesiące
+              Trenuj cały wrzesień<br /><span className="text-yellow-400 text-8xl">za 39 zł</span> <br />i zachowaj dobrą cenę na kolejne miesiące
             </h1>
 
             
