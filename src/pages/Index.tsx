@@ -118,7 +118,7 @@ const Index = () => {
               <div className="flex justify-center mb-4">
                 <i className="fa-solid fa-ticket-perforated text-white text-3xl"></i>
               </div>
-              <h5 className="text-lg font-poppins font-bold text-white mb-3">Karnety już za 39 zł</h5>
+              <h5 className="text-lg font-poppins font-bold text-white mb-3">Karnety już od 39 zł</h5>
               <p className="text-white">za pierwszą płatność</p>
             </div>
             
@@ -197,16 +197,7 @@ const Index = () => {
                   </p>
                 </div>
               </div>
-              <motion.a
-                href={registrationUrl}
-                target="_self"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="inline-block px-8 py-4 bg-accent uppercase text-black font-poppins font-extrabold text-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:bg-accent/90 text-center mt-8"
-              >
-                Kupuję karnet teraz
-              </motion.a>
+              
             </div>
             <div className="order-1 lg:order-2 flex justify-center">
               <div className="w-80 h-80 bg-white/10 rounded-full flex items-center justify-center border-2 border-accent/50">
@@ -234,10 +225,10 @@ const Index = () => {
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger className="text-xl font-semibold text-left">
-                Na czym polega wakacyjna promocja w RMG GYM?
+                Czy muszę podpisać umowę?
               </AccordionTrigger>
               <AccordionContent className="text-lg">
-                Oferujemy trzy karnety do wyboru, których ważność rozpoczyna się 26.05. Płacisz z góry za cały okres wakacyjny (26.05 - 31.08) już od 69 zł, <strong className="font-bold text-accent">a po jego zakończeniu obowiązuje cena wybranej przez Ciebie subskrypcji.</strong>
+              Nie. To subskrypcja – rezygnujesz, kiedy chcesz (zgodnie z wybranym planem).
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
