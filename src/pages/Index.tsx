@@ -55,10 +55,11 @@ const Index = () => {
             className="text-center"
           >
             <h1 className="text-4xl md:text-6xl font-poppins font-extrabold text-white mb-6">
-            Wakacje się skończyły, ale dobra cena zostaje!
+              Trenuj cały wrzesień za 39 zł<br />i zachowaj dobrą cene na kolejne miesiące
             </h1>
+
             
-            <p className="text-xl md:text-3xl font-poppins font-extrabold text-accent mb-8">Trenuj cały wrzesień za 39 zł i omiń podwyżki cen!</p>
+            <p className="text-xl md:text-3xl font-poppins font-extrabold text-accent mb-8">Nie daj się zaskoczyć podwyżkom</p>
             <p className="font-poppins font-normal text-white mb-8"></p>
             <motion.a
               href={registrationUrl}
