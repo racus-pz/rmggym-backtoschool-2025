@@ -54,8 +54,8 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <h1 className="text-4xl md:text-6xl font-poppins font-extrabold text-white mb-6">
-              Trenuj cały wrzesień za 39 zł<br />i zachowaj dobrą cene na kolejne miesiące
+            <h1 className="text-4xl md:text-6xl font-poppins leading-8 font-extrabold text-white mb-6">
+              Trenuj <span className="text-yellow-400">cały wrzesień</span> za 39 zł<br />i zachowaj dobrą cenę na kolejne miesiące
             </h1>
 
             
@@ -117,10 +117,10 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <div className="text-center">
               <div className="flex justify-center mb-4">
-                <i className="fa-solid fa-ticket-perforated text-white text-3xl"></i>
+                <i className="fa-solid fa-ticket-perforated text-yellow-500 text-3xl"></i>
               </div>
-              <h5 className="text-lg font-poppins font-bold text-white mb-3">Karnety już od 39 zł</h5>
-              <p className="text-white">za pierwszą płatność</p>
+              <h5 className="text-lg font-poppins font-bold text-yellow-500 mb-3">Karnety już od 39 zł</h5>
+              <p className="text-yellow-500">za pierwszą płatność</p>
             </div>
             
             <div className="text-center">
