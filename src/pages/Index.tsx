@@ -111,16 +111,16 @@ const Index = () => {
       <section className="bg-black py-20 md:py-32 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-xl md:text-2xl font-poppins font-bold text-center mb-16 text-white">
-            Od 1.09 ceny rosną, ale nie dla Ciebie! TY łapiesz super promkę i gwarancje cen karnetów sprzed podwyżek na dłuuuużej!
+            Od 1.09 ceny rosną, ale nie dla Ciebie! Ty łapiesz super promkę: wrzesień za 39 zł i gwarancję cen karnetów sprzed podwyżki na dłuuużej!
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <div className="text-center">
               <div className="flex justify-center mb-4">
-                <i className="fa-solid fa-ticket-perforated text-yellow-500 text-3xl"></i>
+                <i className="fa-solid fa-ticket-perforated text-yellow-400 text-3xl"></i>
               </div>
-              <h5 className="text-lg font-poppins font-bold text-yellow-500 mb-3">Karnety już od 39 zł</h5>
-              <p className="text-yellow-500">za pierwszą płatność</p>
+              <h5 className="text-lg font-poppins font-bold text-yellow-400 mb-3">Karnety już od 39 zł</h5>
+              <p className="text-yellow-400">za pierwszą płatność</p>
             </div>
             
             <div className="text-center">
