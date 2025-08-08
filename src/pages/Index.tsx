@@ -156,7 +156,7 @@ const Index = () => {
             
             <div className="text-center">
               <div className="flex justify-center mb-4">
-                <i class="fa-solid fa-pot-food text-3xl text-lime-500"></i>
+                <i className="fa-solid fa-pot-food text-3xl text-lime-500"></i>
               </div>
               <h5 className="text-lg font-poppins font-bold text-lime-500 mb-3">Program dietetyczny<span className="bg-lime-500 ms-2 text-black px-1 py-1 rounded-md font-bold text-xs">GRATIS</span></h5>
               <p className="text-lime-500">zadbaj o swoje zdrowie korzystając z dopasowanej diety </p>
