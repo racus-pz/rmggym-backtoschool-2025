@@ -54,8 +54,8 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <h1 className="text-4xl md:text-6xl font-poppins leading-8 font-extrabold text-white mb-6">
-              Trenuj cały wrzesień<br /><span className="text-yellow-400 text-8xl">za 39 zł</span> <br />i zachowaj dobrą cenę na kolejne miesiące
+            <h1 className="text-4xl md:text-6xl font-poppins leading-relaxed font-extrabold text-white mb-6">
+              Trenuj cały wrzesień<br /><span className="text-yellow-400 text-8xl">za 39 zł</span> <br /> zachowaj dobrą cenę na kolejne miesiące
             </h1>
 
             
@@ -111,7 +111,7 @@ const Index = () => {
       <section className="bg-black py-20 md:py-32 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-xl md:text-2xl font-poppins font-bold text-center mb-16 text-white">
-            Od 1.09 ceny rosną, ale nie dla Ciebie! Ty łapiesz super promkę: wrzesień za 39 zł i gwarancję cen karnetów sprzed podwyżki na dłuuużej!
+            Od 1.09 ceny rosną, ale nie dla Ciebie! Ty łapiesz super promkę: wrzesień za 39&nbsp;zł i&nbsp;gwarancję cen karnetów sprzed podwyżki na dłuuużej!
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -180,19 +180,19 @@ const Index = () => {
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <span className="text-4xl">📆</span>
+                  
                   <p className="text-xl text-white leading-relaxed">
                     Od września ceny wszystkich naszych karnetów drożeją
                   </p>
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="text-4xl">💥</span>
+                  
                   <p className="text-xl text-white leading-relaxed">
-                    Ale Ty możesz zatrzymać cenę sprzed podwyżki i do końca września trenować za mniej
+                    Ale Ty możesz zatrzymać cenę sprzed podwyżki i dodatkowo do końca września trenować za mniej!
                   </p>
                 </div>
                 <div className="flex items-start gap-4">
-                  <span className="text-4xl">⏳</span>
+                  
                   <p className="text-xl text-white leading-relaxed">
                     Nie czekaj! Takie ceny już nie wrócą.
                   </p>
@@ -201,13 +201,11 @@ const Index = () => {
               
             </div>
             <div className="order-1 lg:order-2 flex justify-center">
-              <div className="w-80 h-80 bg-white/10 rounded-full flex items-center justify-center border-2 border-accent/50">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">🏋️‍♂️</div>
-                  <p className="text-accent font-bold text-2xl">69 zł</p>
-                  <p className="text-white text-lg">na wakacje</p>
-                </div>
-              </div>
+              <img 
+                src="/images/rmggym-silownia.webp" 
+                alt="Promocyjna oferta siłowni" 
+                className="w-32 h-32"
+              />
             </div>
           </div>
         </div>
