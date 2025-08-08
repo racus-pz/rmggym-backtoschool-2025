@@ -273,12 +273,12 @@ const Index = () => {
               <p>Uwaga: W przypadku braku zgody, konto może zostać tymczasowo zablokowane.</p>
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-7"></AccordionItem>
+            <AccordionItem value="item-7">
               <AccordionTrigger className="text-xl font-semibold text-left">
                 Jakie karnety w ramach promocji Back to School mogę wybrać?
               </AccordionTrigger>
               <AccordionContent className="text-lg">
-              Do wyboru masz trzy rodzaje karnetów: na 12 miesięcy, na czas nieokreślony z subskrypcją i okresem wypowiedzenia oraz na czas nieokreślony z subskrypcją bez wypowiedzenia. Szczegóły znajdziesz po kliknięciu "<a href={registrationUrl} target="_self" rel="noopener noreferrer" className="font-bold text-accent hover:underline">Kupuję karnet w promocyjnej cenie</a>".
+                Do wyboru masz trzy rodzaje karnetów: na 12 miesięcy, na czas nieokreślony z subskrypcją i okresem wypowiedzenia oraz na czas nieokreślony z subskrypcją bez wypowiedzenia. Szczegóły znajdziesz po kliknięciu "<a href={registrationUrl} target="_self" rel="noopener noreferrer" className="font-bold text-accent hover:underline">Kupuję karnet w promocyjnej cenie</a>".
               </AccordionContent>
             </AccordionItem>
           </Accordion>
