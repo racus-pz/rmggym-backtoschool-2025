@@ -204,7 +204,7 @@ const Index = () => {
               <img 
                 src="/images/rmggym-silownia.webp" 
                 alt="Promocyjna oferta siłowni" 
-                className="w-32 h-32"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
