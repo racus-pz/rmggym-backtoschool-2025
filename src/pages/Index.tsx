@@ -54,8 +54,8 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <h1 className="text-4xl md:text-6xl font-poppins leading-8 font-extrabold text-white mb-6">
-              Trenuj <span className="text-yellow-400">cały wrzesień</span> za 39 zł<br />i zachowaj dobrą cenę na kolejne miesiące
+            <h1 className="text-4xl md:text-6xl font-poppins leading-10 font-extrabold text-white mb-6">
+              Trenuj <span className="text-yellow-400">cały wrzesień za 39 zł</span><br />i zachowaj dobrą cenę na kolejne miesiące
             </h1>
 
             
