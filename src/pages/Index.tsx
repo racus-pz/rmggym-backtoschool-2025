@@ -41,7 +41,7 @@ const Index = () => {
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
           >
-            <source src="/videos/rmggym-wakacje2025.mp4" type="video/mp4" />
+            <source src="/videos/rmggym-backtoschool.mp4" type="video/mp4" />
             Twoja przeglądarka nie wspiera odtwarzania wideo.
           </video>
           <div className="absolute inset-0 bg-black/70" />
@@ -213,7 +213,7 @@ const Index = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-black pb-20 px-4">
+      <section className="bg-black pt-20 pb-40 px-4">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-5xl font-poppins font-bold text-center mb-6 text-white">
             Masz pytania?
