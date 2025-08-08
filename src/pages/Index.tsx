@@ -55,10 +55,10 @@ const Index = () => {
             className="text-center"
           >
             <h1 className="text-4xl md:text-6xl font-poppins font-extrabold text-white mb-6">
-              Wracasz po wakacjach? My też.
+            Wakacje się skończyły, ale dobra cena zostaje!
             </h1>
             
-            <p className="text-xl md:text-3xl font-poppins font-extrabold text-accent mb-8">Trenuj do końca września za 39 zł i zatrzymaj starą cenę zanim wzrośnie</p>
+            <p className="text-xl md:text-3xl font-poppins font-extrabold text-accent mb-8">Trenuj cały wrzesień za 39 zł i omiń podwyżki cen!</p>
             <p className="font-poppins font-normal text-white mb-8"></p>
             <motion.a
               href={registrationUrl}
@@ -68,7 +68,7 @@ const Index = () => {
               whileTap={{ scale: 0.95 }}
               className="inline-block px-8 py-4 bg-accent uppercase text-black font-poppins font-extrabold text-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:bg-accent/90 text-center w-full md:w-auto mt-6"
             >
-              Kupuję karnet w promocyjnej cenie
+              KUP KARNET - ZAMROŹ CENĘ
             </motion.a>
           </motion.div>
         </div>
@@ -110,7 +110,7 @@ const Index = () => {
       <section className="bg-black py-20 md:py-32 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-xl md:text-2xl font-poppins font-bold text-center mb-16 text-white">
-            Od 1.09 ceny karnetów rosną – ale nie dla Ciebie! Ty trenujesz taniej i zachowujesz starą cenę karnetu – bez względu na wrześniową podwyżkę!
+            Od 1.09 ceny rosną, ale nie dla Ciebie! TY łapiesz super promkę i gwarancje cen karnetów sprzed podwyżek na dłuuuużej!
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -150,7 +150,7 @@ const Index = () => {
               <div className="flex justify-center mb-4">
                 <i className="fa-solid fa-user-ninja text-3xl text-lime-500"></i>
               </div>
-              <h5 className="text-lg font-poppins font-bold text-lime-500 mb-3">Trening wprowadzający<span className="bg-lime-500 ms-2 text-black px-1 py-1 rounded-md font-bold text-2xs">GRATIS</span></h5>
+              <h5 className="text-lg font-poppins font-bold text-lime-500 mb-3">Trening wprowadzający<span className="bg-lime-500 ms-2 text-black px-1 py-1 rounded-md font-bold text-xs">GRATIS</span></h5>
               <p className="text-lime-500">odkryj swoje możliwości dzięki pomocy trenera personalnego </p>
             </div>
             
@@ -164,7 +164,7 @@ const Index = () => {
           </div>
           
           <p className="text-center text-lg md:text-xl text-white font-semibold">
-            Nie przegap lata i tej oferty! To mogą być Twoje najlepsze wakacje z RMG GYM.
+            Liczba karnetów w promocji ograniczona!
           </p>
         </div>
       </section>
