@@ -224,60 +224,50 @@ const Index = () => {
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger className="text-xl font-semibold text-left">
-                Czy muszę podpisać umowę?
+                Na czym polega promocja Back to school w RMG GYM
               </AccordionTrigger>
               <AccordionContent className="text-lg">
-              Nie. To subskrypcja – rezygnujesz, kiedy chcesz (zgodnie z wybranym planem).
+                Oferujemy trzy karnety do wyboru, których ważność rozpoczyna się od 25.08. Płacisz z góry za cały wrzesień (do 30.09) już od 39 zł, <span className="font-bold">a po jego zakończeniu obowiązuje cena wybranej przez Ciebie subskrypcji.</span>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
               <AccordionTrigger className="text-xl font-semibold text-left">
-                Co znaczy “gwarancja ceny”?
+                Czy kupuję karnet tylko na wrzesień?
               </AccordionTrigger>
               <AccordionContent className="text-lg">
-                Kupując teraz, zachowujesz starą cenę – na cały czas trwania Twojej subskrypcji, nawet jeśli inni zapłacą więcej.
+              Nie, karnet na wrzesień to promocyjny start dłuższej subskrypcji. Wybierając karnet na wrzesień w promocyjnej cenie, automatycznie aktywujesz karnet na kolejne miesiące – zgodnie z warunkami wybranej oferty.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
               <AccordionTrigger className="text-xl font-semibold text-left">
-                Czy to działa we wszystkich klubach?
+                Jakie karnety w ramach promocji Back to School mogę wybrać?
               </AccordionTrigger>
               <AccordionContent className="text-lg">
-                Tak – promocja obowiązuje w całej sieci RMG GYM.
+                <span className="font-bold">Do wyboru masz trzy rodzaje karnetów:</span> na 12 miesięcy, na czas nieokreślony z subskrypcją i okresem wypowiedzenia oraz na czas nieokreślony z subskrypcją bez wypowiedzenia. Szczegóły znajdziesz po kliknięciu "<a href={registrationUrl} target="_self" rel="noopener noreferrer" className="font-bold text-accent hover:underline">Kupuję karnet w promocyjnej cenie</a>".
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
               <AccordionTrigger className="text-xl font-semibold text-left">
-                Na czym polega promocja Back to School w RMG GYM?
+                Czy to działa we wszystkich klubach?
               </AccordionTrigger>
               <AccordionContent className="text-lg">
-                Oferujemy trzy promocyjne karnety, dzięki którym zyskujesz pierwszą płatność w niższej cenie a kolejne w cenach sprzed podwyżki. Dodatkowo zyskujesz gwarancję, że Twoja cena nie wzrośnie podczas subskrypcji.
+                Tak – promocja obowiązuje <span className="font-bold">w całej sieci RMG GYM</span>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
               <AccordionTrigger className="text-xl font-semibold text-left">
-                Czy kupuję karnet tylko na wrzesień?
+                Czy mogę trenować na siłowni RMG GYM jeśli nie jestem pełnoletni?
               </AccordionTrigger>
               <AccordionContent className="text-lg">
-                Nie, karnet na wrzesień to promocyjny start dłuższej subskrypcji. Wybierając karnet na wrzesień w promocyjnej cenie, automatycznie aktywujesz karnet na kolejne miesiące – zgodnie z warunkami wybranej oferty.
+              <p>Jasne! Do RMG GYM <span className="font-bold">mogą uczęszczać osoby, które mają ukończone 13 lat.</span></p> <p>Pamiętaj, aby dostarczyć pisemną zgodę rodzica/opiekuna prawnego w formie skanu lub zdjęć na adres <a href="mailto:bok@rmggym.pl">bok@rmggym.pl</a>. Wzór zgody do druku znajdziesz tutaj: <a href="https://rmggym.pl/Zgoda_pelnoletnosc.pdf">Zgoda</a></p> <p>Uwaga: W przypadku braku zgody, konto może zostać tymczasowo zablokowane.</p>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-6">
               <AccordionTrigger className="text-xl font-semibold text-left">
-                Czy mogę trenować na siłowni RMG GYM jeśli nie jestem pełnoletni?
+                Co znaczy “gwarancja ceny”?
               </AccordionTrigger>
               <AccordionContent className="text-lg">
-                <p>Jasne! Do RMG GYM mogą uczęszczać osoby, które mają ukończone 13 lat.</p>
-                <p>Pamiętaj, aby dostarczyć pisemną zgodę rodzica/opiekuna prawnego w formie skanu lub zdjęć na adres <a href="mailto:bok@rmggym.pl">bok@rmggym.pl</a>. Wzór zgody do druku znajdziesz tutaj: <a href="https://rmggym.pl/Zgoda_pelnoletnosc.pdf">Zgoda</a></p>
-              <p>Uwaga: W przypadku braku zgody, konto może zostać tymczasowo zablokowane.</p>
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-7">
-              <AccordionTrigger className="text-xl font-semibold text-left">
-                Jakie karnety w ramach promocji Back to School mogę wybrać?
-              </AccordionTrigger>
-              <AccordionContent className="text-lg">
-                Do wyboru masz trzy rodzaje karnetów: na 12 miesięcy, na czas nieokreślony z subskrypcją i okresem wypowiedzenia oraz na czas nieokreślony z subskrypcją bez wypowiedzenia. Szczegóły znajdziesz po kliknięciu "<a href={registrationUrl} target="_self" rel="noopener noreferrer" className="font-bold text-accent hover:underline">Kupuję karnet w promocyjnej cenie</a>".
+                Kupując karnet w promocji Back to School <span className="font-bold">zachowujesz starą cenę</span> (obowiązującą na wybraną przez Ciebie subskrypcje przed 01.09.2025 r.) – na cały czas trwania wybranej subskrypcji, nawet jeśli inni zapłacą więcej.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
