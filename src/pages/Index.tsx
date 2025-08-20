@@ -55,7 +55,7 @@ const Index = () => {
             className="text-center"
           >
             <h1 className="text-4xl md:text-6xl font-poppins leading-relaxed font-extrabold text-white mb-6">
-              Trenuj cały wrzesień<br /><span className="text-yellow-400 text-8xl">za 39 zł</span> <br /> zachowaj dobrą cenę na kolejne miesiące
+              Trenuj do końca września<br /><span className="text-yellow-400 text-8xl">za 39 zł</span> <br /> zachowaj dobrą cenę na kolejne miesiące
             </h1>
 
             
@@ -111,7 +111,7 @@ const Index = () => {
       <section className="bg-black py-20 md:py-32 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-xl md:text-2xl font-poppins font-bold text-center mb-16 text-white">
-            Od 1.09 ceny rosną, ale nie dla Ciebie! Ty łapiesz super promkę: wrzesień za 39&nbsp;zł i&nbsp;gwarancję cen karnetów sprzed podwyżki na dłuuużej!
+            Od 1.09 ceny rosną, ale nie dla Ciebie! Ty łapiesz super promkę: trening do końca września za 39&nbsp;zł i&nbsp;gwarancję cen karnetów sprzed podwyżki na dłuuużej!
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
