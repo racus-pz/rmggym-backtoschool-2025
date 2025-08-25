@@ -55,7 +55,7 @@ const Index = () => {
             className="text-center"
           >
             <h1 className="text-4xl md:text-6xl font-poppins leading-relaxed font-extrabold text-white mb-6">
-              Trenuj do końca września<br /><span className="text-yellow-400 text-8xl">za 39 zł</span> <br /> zachowaj dobrą cenę na kolejne miesiące
+              Zacznij trenować<br /><span className="text-yellow-400 text-8xl">za 39 zł</span> <br /> zachowaj dobrą cenę na kolejne miesiące
             </h1>
 
             
@@ -111,7 +111,7 @@ const Index = () => {
       <section className="bg-black py-20 md:py-32 px-4">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-xl md:text-2xl font-poppins font-bold text-center mb-16 text-white">
-            Od 1.09 ceny rosną, ale nie dla Ciebie! Ty łapiesz super promkę: trening do końca września za 39&nbsp;zł i&nbsp;gwarancję cen karnetów sprzed podwyżki na dłuuużej!
+            Od 1.09 ceny rosną, ale nie dla Ciebie! Ty łapiesz super promkę: pierwszy miesiąc za 39&nbsp;zł i&nbsp;gwarancję cen karnetów sprzed podwyżki na dłuuużej!
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -188,7 +188,7 @@ const Index = () => {
                 <div className="flex items-start gap-4">
                   
                   <p className="text-xl text-white leading-relaxed">
-                    Ale Ty możesz zatrzymać cenę sprzed podwyżki i&nbsp;dodatkowo do końca września trenować za mniej!
+                    Ale Ty możesz zatrzymać cenę sprzed podwyżki i&nbsp;dodatkowo pierwszy miesiąc trenować za mniej!
                   </p>
                 </div>
                 <div className="flex items-start gap-4">
@@ -227,15 +227,16 @@ const Index = () => {
                 Na czym polega promocja Back to school w RMG GYM
               </AccordionTrigger>
               <AccordionContent className="text-lg">
-                Oferujemy trzy karnety do wyboru, których ważność rozpoczyna się od 25.08. Płacisz z góry za cały wrzesień (do 30.09) już od 39 zł, <span className="font-bold">a po jego zakończeniu obowiązuje cena wybranej przez Ciebie subskrypcji.</span>
+                Oferujemy trzy karnety do wyboru, których ważność rozpoczyna się od 25.08. Płacisz z góry za pierwszy miesiąc (okres rozliczeniowy 28 dni) już od 39 zł, <span className="font-bold">a po jego zakończeniu obowiązuje cena wybranej przez Ciebie subskrypcji.</span>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
               <AccordionTrigger className="text-xl font-semibold text-left">
-                Czy kupuję karnet tylko na wrzesień?
+                Czy kupuję karnet tylko na miesiąc?
               </AccordionTrigger>
               <AccordionContent className="text-lg">
-              Nie, karnet na wrzesień to promocyjny start dłuższej subskrypcji. Wybierając karnet na wrzesień w promocyjnej cenie, automatycznie aktywujesz karnet na kolejne miesiące – zgodnie z warunkami wybranej oferty.
+              Płacisz z góry za pierwszy miesiąc (okres rozliczeniowy 28 dni)
+5. Tu pytanie zmieńmy na: Czy kupuję karnet tylko na miesiąc. ODP: Nie, karnet na miesiąc to promocyjny start dłuższej subskrypcji. Kupując karnet w promocyjnej cenie, automatycznie aktywujesz karnet na kolejne miesiące - zgodnie z warunkami wybranej oferty.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
