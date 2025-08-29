@@ -235,8 +235,7 @@ const Index = () => {
                 Czy kupuję karnet tylko na miesiąc?
               </AccordionTrigger>
               <AccordionContent className="text-lg">
-              Płacisz z góry za pierwszy miesiąc (okres rozliczeniowy 28 dni)
-5. Tu pytanie zmieńmy na: Czy kupuję karnet tylko na miesiąc. ODP: Nie, karnet na miesiąc to promocyjny start dłuższej subskrypcji. Kupując karnet w promocyjnej cenie, automatycznie aktywujesz karnet na kolejne miesiące - zgodnie z warunkami wybranej oferty.
+                Kupując karnet w promocyjnej cenie, automatycznie aktywujesz karnet na kolejne miesiące - zgodnie z warunkami wybranej oferty.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
